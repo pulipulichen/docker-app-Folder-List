@@ -8,7 +8,8 @@
     "commit-docker-image": "docker-compose build; bash ./docker-build/image/commit-docker-image.sh",
     "d0.build": "docker-compose build",
     "d1.bash": "docker-compose run app bash",
-    "update": "node update.js"
+    "update": "node update.js",
+    "tag": "./build/tag.sh"
   },
   "repository": {
     "type": "git",
