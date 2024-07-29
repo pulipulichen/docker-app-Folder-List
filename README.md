@@ -1,4 +1,4 @@
-@TODO DOI
+[![DOI](https://zenodo.org/badge/835419218.svg)](https://zenodo.org/doi/10.5281/zenodo.13128108)
 
 # docker-app-Folder-List: 自動產生資料夾清單的工具。
 A tool that automatically generates folder lists.
