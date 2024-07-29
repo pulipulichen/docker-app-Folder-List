@@ -17,9 +17,8 @@ By providing a folder path as input, this tool generates a file containing a com
 - **Docker**: 以容器化方式部署。確保工具的運作在不同平臺都能運行。
 - **Node.js**: 執行腳本的程式語言。
 
-
 ----
 
 # Citation
 
-@TODO
+Chen, Y.-T. (2024). *Docker-app-Folder-List* (20240730.043131) [Computer software]. Zenodo. [https://doi.org/10.5281/ZENODO.13128108](https://doi.org/10.5281/ZENODO.13128108)
