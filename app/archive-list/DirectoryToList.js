@@ -5,6 +5,8 @@ const XLSX = require('xlsx');
 const path = require('path')
 const fs = require('fs')
 
+const isExcluded = require('./isExcluded')
+
 
 // Function to recursively traverse a directory and collect file information
 function traverseDirectory(directoryPath, filesInfo, topDirectoryPath) {
@@ -15,7 +17,10 @@ function traverseDirectory(directoryPath, filesInfo, topDirectoryPath) {
     const stats = fs.statSync(filePath);
 
     if (stats.isDirectory()) {
-      traverseDirectory(filePath, filesInfo, topDirectoryPath);
+      if (isExcluded(path.basename(filePath)) === false) {
+        traverseDirectory(filePath, filesInfo, topDirectoryPath);
+      }
+        
     } else {
       let extname = ''
       let mimeType = ''
