@@ -3,6 +3,7 @@ services:
   app:
     image: pudding/docker-app:docker-app-Folder-List-20240730.041903
     tty: true
+    user: "${UID}:${GID}"
     command: node /app/index.js "/input/__INPUT__"
     environment:
       - CONTAINER_NAME=docker-app-folder-list-app

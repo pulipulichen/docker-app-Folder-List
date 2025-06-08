@@ -3,6 +3,7 @@ services:
   app:
     build: .
     tty: true
+    user: "${UID}:${GID}"
     command: node /app/index.js "/home/pudding/Documents/ramdisk/test/"
     volumes: 
       - ./app:/app/
